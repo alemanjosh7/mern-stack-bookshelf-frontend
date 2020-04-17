@@ -14,6 +14,7 @@ function App() {
       <Route path="/" exact component={BooksList} />
       <Route path="/edit/:id" component={CreateBook} />
       <Route path="/create" component={CreateBook} />
+      <Footer />
     </Router>
   );
 }
