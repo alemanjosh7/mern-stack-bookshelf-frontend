@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import 'bootstrap/dist/css/bootstrap.min.css'
+import "bootstrap/dist/css/bootstrap.min.css";
 
 import Navigation from "./components/Navigation";
 import CreateBook from "./components/CreateBook";
@@ -11,9 +11,11 @@ function App() {
   return (
     <Router>
       <Navigation />
-      <Route path="/" exact component={BooksList} />
-      <Route path="/edit/:id" component={CreateBook} />
-      <Route path="/create" component={CreateBook} />
+      <div className="container p-4">
+        <Route path="/" exact component={BooksList} />
+        <Route path="/edit/:id" component={CreateBook} />
+        <Route path="/create" component={CreateBook} />
+      </div>
     </Router>
   );
 }
