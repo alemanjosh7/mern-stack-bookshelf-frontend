@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import Sidebar from "./Sidebar";
 
 export default class BooksList extends Component {
     render() {
@@ -8,7 +9,9 @@ export default class BooksList extends Component {
                  <div class="container">
                  <h2>Libros</h2> 
         <div class="row" >
-              
+        <div class="col">
+            <Sidebar />
+            </div>
              <div class="col">
                <div class="card" style={{width: "18rem;"}}>
   <img src="#" class="card-img-top" alt="..." />
@@ -44,6 +47,9 @@ export default class BooksList extends Component {
 
     </div>
                </div>
+
+
+
 
     </div>
                </React.Fragment>
