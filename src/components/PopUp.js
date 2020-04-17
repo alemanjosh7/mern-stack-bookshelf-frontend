@@ -13,7 +13,7 @@ const PopUp = (props) => {
 
   return (
     <div>
-      <Button color="btn btn-primary" onClick={toggle}>Descargar</Button>
+      <Button color="btn btn-primary" onClick={toggle}>Ver más</Button>
       <Modal isOpen={modal} toggle={toggle} className={className}>
         <ModalHeader toggle={toggle}>Modal title</ModalHeader>
         <ModalBody>

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Sidebar from "./Sidebar";
-import PopUp from "./PopUp";
-
+import Sidebar from './Sidebar';
+import PopUp from './PopUp';
+import Foto1 from '../images/foto1.jpg';
 
 export default class BooksList extends Component {
     render() {
@@ -18,21 +18,21 @@ export default class BooksList extends Component {
             </div>
              <div class="col">
                <div class="card" style={{width: "18rem;"}}>
-  <img src="#" class="card-img-top" alt="..." />
+  <img src={Foto1} class="card-img-top" alt="Foto Libro" />
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <PopUp />
+    <p class="card-text">Libro Acerca de historia.</p>
+     <PopUp />
   </div>
 </div>    
     </div>
     <div class="col">
     
     <div class="card" style={{width: "18rem;"}}>
-  <img src="#" class="card-img-top" alt="..." />
+  <img src={Foto1} class="card-img-top" alt="..." />
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <p class="card-text">Libro Acerca de historia.</p>
     <PopUp />
   </div>
 </div> 
@@ -41,10 +41,10 @@ export default class BooksList extends Component {
     <div class="col">
       
     <div class="card" style={{width: "18rem;"}}>
-  <img src="#" class="card-img-top" alt="..." />
+  <img src={Foto1} class="card-img-top" alt="..." />
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <p class="card-text">Libro Acerca de historia.</p>
     <PopUp />
   </div>
 </div> 
@@ -56,6 +56,7 @@ export default class BooksList extends Component {
 
 
     </div>
+    <br/>
                </React.Fragment>
         )
     }
