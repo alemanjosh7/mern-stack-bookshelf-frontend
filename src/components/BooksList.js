@@ -31,12 +31,21 @@ export default class BooksList extends Component {
       // ¿Cómo itero y muestro cada elemento de mi arreglo de artículos?
       return (
         <React.Fragment>
-          <span>Se encontraron {books.length} artículos</span>
+          <span>Se encontraron {books.length} libros</span>
           { books.map(book => {
             return (
-              <BookList
-                titulo={book.title}
-               />
+            
+                <div className="col">
+               <div className="card" style={{width: "18rem;"}}>
+  <img src={Foto1} className="card-img-top" alt="Foto Libro" />
+  <div className="card-body">
+    <h5 className="card-title">{book.title}</h5>
+    <p className="card-text"><strong>Categoria:</strong> {book.category}</p>
+     <PopUp />
+  </div>
+</div>    <br />  <br />
+    </div>   
+         
             )
           })}
         </React.Fragment>
@@ -51,46 +60,15 @@ export default class BooksList extends Component {
                  <div class="container">
                  <br/>
         <h1>{this.state.titulo}</h1> 
-        { this.renderizarBooks() }
+      
                  <br/>
         <div class="row" >
         <div class="col">
             <Sidebar />
             </div>
-             <div class="col">
-               <div class="card" style={{width: "18rem;"}}>
-  <img src={Foto1} class="card-img-top" alt="Foto Libro" />
-  <div class="card-body">
-    <h5 class="card-title">{this.state.books.array.title}</h5>
-    <p class="card-text">Libro Acerca de historia.</p>
-     <PopUp />
-  </div>
-</div>    
-    </div>
-    <div class="col">
+             
+            { this.renderizarBooks() }
     
-    <div class="card" style={{width: "18rem;"}}>
-  <img src={Foto1} class="card-img-top" alt="..." />
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Libro Acerca de historia.</p>
-    <PopUp />
-  </div>
-</div> 
-
-    </div>
-    <div class="col">
-      
-    <div class="card" style={{width: "18rem;"}}>
-  <img src={Foto1} class="card-img-top" alt="..." />
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Libro Acerca de historia.</p>
-    <PopUp />
-  </div>
-</div> 
-
-    </div>
                </div>
 
 
