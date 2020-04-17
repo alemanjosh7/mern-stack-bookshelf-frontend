@@ -31,7 +31,7 @@ export default class BooksList extends Component {
       // ¿Cómo itero y muestro cada elemento de mi arreglo de artículos?
       return (
         <React.Fragment>
-          <span>Se encontraron {books.length} libros</span>
+         
           { books.map(book => {
             return (
             
@@ -57,15 +57,14 @@ export default class BooksList extends Component {
         return (
             <React.Fragment>
 
-                 <div class="container">
+                 <div class="container-fluid">
                  <br/>
         <h1>{this.state.titulo}</h1> 
+        <span>Se encontraron {this.state.books.length} libros</span>
       
-                 <br/>
+                 <br/><br/>
         <div class="row" >
-        <div class="col">
-            <Sidebar />
-            </div>
+      
              
             { this.renderizarBooks() }
     
