@@ -6,7 +6,7 @@ export default class Navigation extends Component {
     return (
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark p-3">
         <div className="container">
-          <Link className="navbar-brand" to="/">
+        <Link className="navbar-brand" to="/">
             <i className="material-icons"></i> Bookshelf App
           </Link>
           <button
@@ -24,7 +24,23 @@ export default class Navigation extends Component {
             <ul className="navbar-nav ml-auto">
               <li className="nav-item active">
                 <Link to="/" className="nav-link">
-                  Books
+                  Literatura
+                </Link>
+              </li>
+
+              <li className="nav-item active">
+                <Link to="/" className="nav-link">
+                 Tecnología
+                </Link>
+              </li>
+              <li className="nav-item active">
+                <Link to="/" className="nav-link">
+                 Arte
+                </Link>
+              </li>
+              <li className="nav-item active">
+                <Link to="/" className="nav-link">
+                 Software
                 </Link>
               </li>
               <li className="nav-item">
