@@ -16,6 +16,7 @@ function App() {
         <Route path="/edit/:id" component={CreateBook} />
         <Route path="/create" component={CreateBook} />
       </div>
+      <Footer />
     </Router>
   );
 }
